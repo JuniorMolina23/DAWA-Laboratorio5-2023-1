@@ -132,13 +132,13 @@
 
 
         // Función para recibir mensajes del chat 2
-        socket.on('chat message 2', function (name2, msg, hora) {
+        socket.on('chat message 2', function (names2, msg, hora) {
             var listaMensajes = document.getElementById('lista-mensajes');
             var mensaje = document.createElement('li');
             var divE = document.createElement("div");
 
             mensaje.style.textAlign = 'right';
-            mensaje.textContent = name2 + " : " + msg;
+            mensaje.textContent = names2 + " : " + msg;
             var horaE = document.createElement('li');
             horaE.textContent = hora
             horaE.style.textAlign = 'right';

@@ -27,10 +27,10 @@ io.on('connection', function (socket) {
         userimage1 = image1
         io.emit('update user 1', name1,userimage1)
     })
-    socket.on('update user 2', function(name2 , image2){
-        name2 = name2
+    socket.on('update user 2', function(names2 , image2){
+        name2 = names2
         userimage2 = image2
-        io.emit('update user 2', name2,userimage2)
+        io.emit('update user 2', names2,userimage2)
     })
 
 
